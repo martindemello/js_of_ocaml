@@ -20,6 +20,8 @@
 
 open Js_of_ocaml_compiler
 
+include Js_of_ocaml_compiler_findlib_support
+
 let times = Option.Debug.find "times"
 let debug_mem = Option.Debug.find "mem"
 let _ = Sys.catch_break true

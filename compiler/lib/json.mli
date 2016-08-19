@@ -1,6 +1,6 @@
-(* Js_of_ocaml library
+(* Js_of_ocaml compiler
  * http://www.ocsigen.org/js_of_ocaml/
- * Copyright (C) 2014 Hugo Heuzard
+ * Copyright (C) 2015 Hugo Heuzard
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
-*)
+ *)
 
-open Js_of_ocaml
+type t = 
+  [ `Null
+  | `Bool of bool
+  | `Float of float
+  | `String of string
+  | `A of t list
+  | `O of (string * t) list ]
 
-(** Cast to and from Tyxml types *)
-
-module MakeTo( C : sig type 'a elt val elt : 'a elt -> Dom.node Js.t end) :
-  Tyxml_cast_sigs.TO with type 'a elt = 'a C.elt
-
-module MakeOf( C : sig type 'a elt val elt : Dom.node Js.t -> 'a elt end) :
-  Tyxml_cast_sigs.OF with type 'a elt = 'a C.elt
+val pp : Pretty_print.t -> t -> unit
