@@ -4,4 +4,5 @@
   (extra_disabled_warnings (7 9 37 38))
   (js_of_ocaml ())
   (preprocess ((no_preprocessing All)))
+  (library_flags (-linkall))
   ))
