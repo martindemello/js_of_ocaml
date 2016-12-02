@@ -1,0 +1,25 @@
+lib: [
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.cmxs"
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.a"
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.cmxa"
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.cma"
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.ml"
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.cmt"
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.cmx"
+  "_build/default/ppx/ppx_js/driver/ppx_js_driver.cmi"
+  "_build/default/ppx/ppx_js/lib/ppx_js.cmxs"
+  "_build/default/ppx/ppx_js/lib/ppx_js.a"
+  "_build/default/ppx/ppx_js/lib/ppx_js.cmxa"
+  "_build/default/ppx/ppx_js/lib/ppx_js.cma"
+  "_build/default/ppx/ppx_js/lib/ppx_js.pp.mli"
+  "_build/default/ppx/ppx_js/lib/ppx_js.cmti"
+  "_build/default/ppx/ppx_js/lib/ppx_js.cmt"
+  "_build/default/ppx/ppx_js/lib/ppx_js.cmx"
+  "_build/default/ppx/ppx_js/lib/ppx_js.cmi"
+  "_build/default/ppx/ppx_js/bin/ppx_js_bin.exe" {"ppx_js"}
+  "_build/default/META.js_of_ocaml-ppx" {"META"}
+]
+doc: [
+  "README.md"
+  "LICENSE"
+]

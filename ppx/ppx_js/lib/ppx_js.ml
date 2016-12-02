@@ -31,7 +31,7 @@ let arrows args ret =
     args
     ret
 
-let wrapper = ref None
+let wrapper = ref (Some "Js_of_ocaml")
 
 let inside_Js = lazy
   (try

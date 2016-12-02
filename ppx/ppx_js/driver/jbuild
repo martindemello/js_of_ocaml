@@ -1,0 +1,7 @@
+(library
+ ((name ppx_js_driver)
+  (public_name js_of_ocaml-ppx.driver)
+  (libraries (compiler-libs.common ppx_js ppx_driver))
+;; CR: fix this in jbuilder
+  (flags (-linkall))
+  (preprocess (no_preprocessing))))
