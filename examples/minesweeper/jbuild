@@ -2,6 +2,6 @@
  ((names (main))
   (libraries (js_of_ocaml))
   (extra_disabled_warnings (7 9 37 38))
-  (preprocess (pps (pa_js)))
+  (preprocess (pps (ppx_js_driver)))
   (js_of_ocaml ())
   ))

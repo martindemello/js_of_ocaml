@@ -15,7 +15,7 @@
   ;; (modules (:standard \ jsonp lwt_js_events lwt_js))
   (c_names (js_of_ocaml_stubs))
   (js_of_ocaml ())
-  (preprocess (pps (pa_js)))))
+  (preprocess (pps (ppx_js_driver)))))
 
 (rule
  ((targets (js_of_ocaml_stubs.c))

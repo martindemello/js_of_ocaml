@@ -4,4 +4,4 @@
   (libraries (js_of_ocaml
               async_kernel))
   (js_of_ocaml ())
-  (preprocess (pps (pa_js)))))
+  (preprocess (pps (ppx_js_driver)))))

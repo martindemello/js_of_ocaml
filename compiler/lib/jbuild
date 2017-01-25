@@ -1,8 +1,6 @@
 (library
  ((name js_of_ocaml_compiler)
-  (ocamlc_flags (-I +compiler-libs))
-  (ocamlopt_flags (-I +compiler-libs))
-  (libraries (cmdliner base64 yojson))
+  (libraries (cmdliner base64 yojson compiler-libs.common))
   (js_of_ocaml ())
   (extra_disabled_warnings (7 9 37 38))
   (preprocess no_preprocessing)

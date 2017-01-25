@@ -4,7 +4,7 @@
   (libraries (compiler-libs.bytecomp js_of_ocaml js_of_ocaml_compiler))
   (modules (:standard \ jsooTopError.cppo))
   (js_of_ocaml ())
-  (preprocess (pps (pa_js)))))
+  (preprocess (pps (ppx_js_driver)))))
 
 
 (rule
