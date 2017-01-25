@@ -1,5 +1,5 @@
 (executables
- ((names (jsoo_compile minify))
+ ((names (jsoo_compile minify jsoo_link))
   (ocamlc_flags (-I +compiler-libs))
   (ocamlopt_flags (-I +compiler-libs))
   (libraries (cmdliner base64 js_of_ocaml_compiler js_of_ocaml_compiler_findlib_support))
@@ -18,3 +18,4 @@
    (deps (js_of_ocaml))))
 
 (provides js_of_ocaml)
+(provides jsoo_link)
