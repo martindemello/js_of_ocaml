@@ -5,7 +5,7 @@
   (libraries (cmdliner base64))
   (js_of_ocaml ())
   (extra_disabled_warnings (7 9 37 38))
-  (preprocess ((no_preprocessing All)))
+  (preprocess no_preprocessing)
   (modules (:standard \ control util.cppo))
   ))
 

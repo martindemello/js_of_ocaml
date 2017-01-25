@@ -1,10 +1,9 @@
-requires_camlp4
 (library
  ((name js_of_ocaml_deriving)
   (libraries ())
   (js_of_ocaml ())
   (extra_disabled_warnings ())
-  (preprocess (((pps (pa_js)) All)))
+  (preprocess (pps (pa_js)))
   ))
 
 

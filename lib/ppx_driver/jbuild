@@ -1,7 +1,5 @@
 (library
  ((name ppx_js_driver)
   (public_name js_of_ocaml.ppx.driver)
-  (public_release (external ((wrapped false))))
-  (wrapped false)
   (libraries (ocamlcommon ppx_js ppx_driver))
-  (preprocess ((no_preprocessing All)))))
+  (preprocess no_preprocessing)))

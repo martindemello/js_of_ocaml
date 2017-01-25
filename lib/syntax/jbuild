@@ -1,4 +1,5 @@
-(preprocessor
+(library
  ((name pa_js)
   (extra_disabled_warnings (3))
-  (preprocess (((command "${camlp4orf}") (List (pa_js)))))))
+  (preprocess (per_file ((command "${camlp4orf}") (pa_js))))
+  ))
