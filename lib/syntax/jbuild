@@ -1,5 +1,5 @@
-(library
- ((name pa_js)
-  (extra_disabled_warnings (3))
-  (preprocess (per_file ((command "${camlp4orf}") (pa_js))))
-  ))
+;; (library
+;;  ((name pa_js)
+;;   (extra_disabled_warnings (3))
+;;   (preprocess (per_file ((command "${camlp4orf}") (pa_js))))
+;;   ))
