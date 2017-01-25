@@ -118,3 +118,11 @@ lib/js_of_ocaml_stubs.c
 .jenga
 .omake-ocaml-bin
 .opam-bin
+*.external-javascript-linker-option
+*.runtime.js
+*.bc.js
+*.ppx-runtime-deps
+.ocaml-bin
+.ocaml-major-version
+.ocaml-major-version.tmp
+.ppx/
