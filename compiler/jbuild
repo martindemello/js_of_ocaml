@@ -13,6 +13,11 @@
   (deps (jsoo_compile.exe))
   (action "cp --remove-destination jsoo_compile.exe js_of_ocaml")))
 
+(rule
+ ((targets (jsoo_link))
+  (deps (jsoo_compile.exe))
+  (action "cp --remove-destination jsoo_link.exe jsoo_link")))
+
 (alias
   ((name DEFAULT)
    (deps (js_of_ocaml))))
