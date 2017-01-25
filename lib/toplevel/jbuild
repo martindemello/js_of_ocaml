@@ -2,7 +2,7 @@
  ((name js_of_ocaml_toplevel)
   (public_name js_of_ocaml.toplevel)
   (libraries (compiler-libs.bytecomp js_of_ocaml js_of_ocaml_compiler))
-  (modules (:standard \ jsooTopError.cppo))
+  (modules (:standard \ jsooTopError.cppo jsooTopCamlp4))
   (js_of_ocaml ())
   (preprocess (pps (ppx_js_driver)))))
 
